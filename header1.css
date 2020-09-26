@@ -1,0 +1,166 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	
+}
+.menu-area ul{
+	list-style: none;
+}
+.menu-area{
+	display: unset;
+	text-align: center;
+	position: relative;
+	top: 5%;
+	/* left: 50%; */
+	width: 100%;
+	/* transform: translate(-50%,-50%); */
+}
+.menu-area li:hover{
+
+	background: #45f3ff;
+}
+.menu-area > ul{
+	list-style: none;
+	padding: 0;
+	margin: 0px;
+	width: 100%;
+	display: inline-block;
+	background: #70C2C4;
+	color: #000;
+}
+.menu-area > ul > li{
+	position: relative;
+	cursor: pointer;
+	font-family: roboto;
+	font-size: 18px;
+	letter-spacing: 1px;
+	float: left;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+/* Login SignUp Btn */
+
+.menu-area > ul >li:nth-child(6){
+	position: absolute;
+	right: 100px;
+	box-sizing: border-box;
+}
+
+
+.menu-area > ul >li:nth-child(7){
+	position: absolute;
+	right: 0;
+	box-sizing: border-box;
+}
+
+.menuarea ul{
+	list-style: none;
+}
+.menu-area .menuarea{
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	top: 7%;
+	left: 90%;
+	/* width: 20%; */
+	/* transform: translate(-50%,-50%); */
+}
+.menuarea li:hover{
+	background: #06F0F6;
+}
+.menuarea > ul{
+	list-style: none;
+	padding: 10px;
+	margin: 550px;
+	width: 200px;
+	display: inline-block;
+	background: #70C2C4;
+	color: #000;
+}
+.menuarea > ul > li{
+	position: relative;
+	cursor: pointer;
+	font-family: roboto;
+	font-size: 18px;
+	letter-spacing: 1px;
+	float: left;
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+}
+.dropdown{
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 100%
+	padding :0;
+}
+.dropdown li{
+	background: #70C2C4;
+	display: none;
+	width: 100px;
+}
+.dropdown li:hover{
+	background: #06F0F6;
+}
+.menu-area li:hover >.dropdown{
+		perspective: 1000px;
+}
+.menu-area li:hover >.dropdown li{
+		transform-origin: top center;
+		opacity: 0;
+		display: block;
+}
+.menu-area li:hover >.dropdown li:nth-child(1){
+	animation: animate 300ms ease-in-out forwards;
+	animation-delay: -150ms;
+}
+.menu-area li:hover >.dropdown li:nth-child(2){
+	animation: animate 300ms ease-in-out forwards;
+	animation-delay: 0ms;
+}
+.menu-area li:hover >.dropdown li:nth-child(3){
+	animation: animate 300ms ease-in-out forwards;
+	animation-delay: 150ms;
+}
+.menu-area li:hover >.dropdown li:nth-child(4){
+	animation: animate 300ms ease-in-out forwards;
+	animation-delay: 300ms;
+}
+.menu-area li:hover >.dropdown li:nth-child(5){
+	animation: animate 300ms ease-in-out forwards;
+	animation-delay: 450ms;
+}
+
+@keyframes animate{
+	0%{
+		opacity: 0;
+		transform: scale(0);
+	}
+	50%{
+		opacity: 1;
+	}
+	90%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+
