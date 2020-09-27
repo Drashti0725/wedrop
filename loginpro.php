@@ -1,38 +1,51 @@
 <?php
-	if (isset($_POST['Submit']))
-	{
-		require_once('connection.php');
 
-		$username = $_POST['username'];
-		$password = $_POST['password'];
 
-		$user_search ="select * from user_registration where username='".$username."'";
-		$user_search_query = mysqli_query($con,$user_search);
+		include("connection.php");
+		//session_start();
+		//$_SESSION['yes']="no";
 		 
-	 
-			
-	 
+		 oy aa file kaik gote chali gy che hve aa nirate karis zeel no call aviya mare javu padse ane kaik kam che so ho n hmna avu ho 
 
-		// if($username == $row)
-		// {
-		// 	$pass = mysqli_fetch_assoc($user_search_query);
+		if(isset($_POST['Submit']))
+		{
+			    $username=$_POST['username'];
+				$password=$_POST['password'];
 
-		// 	$db_pass = $pass['password'];
+				$user_search ="select * from user_registration ";
+				echo "1";
+				$user_search_query = mysqli_query($con,$user_search);
+				echo "2";
+				$pass = mysqli_fetch_assoc($user_search_query);
+				echo "3";
+				$db_user = $pass['username'];
+				 
+				 echo $db_user;
 
-		// 	if($password == $db_pass)
-		// 	{
-		// 			header("location:index.php");
-		// 	}
-		// 	else
-		// 	{
-		// 		echo "<script>alert('Invalid Your Password')</script>";
-				
-		// 	}
-		// }
-		// else
-		// {
-		// 		echo "<script>alert('Invalid Your username')</script>";
-		// }
-		
-	}
+				// if()
+				// {
+				// 	$pass = mysqli_fetch_assoc($user_search_query);
+
+				// 	$db_pass = $pass['password'];
+
+
+				// 	if($db_pass == $password)
+				// 	{
+				// 		 echo  "drashti";
+				// 	}
+				// 	else
+				// 	{
+				// 		//echo "<script>alert('Invalid Your Password!')</script>";
+				// 	}
+				// }
+				// else
+				// {
+				// 	//echo "<script>alert('Invalid User Name!')</script>";
+				// }
+		}
+		else
+		{
+			//header("location:login.php");
+		}
+
 ?>
