@@ -9,7 +9,7 @@
 	<?php  
 		include 'header1.php';
 	?>
-	<form method="POST" action="loginpro.php">
+	<form method="POST" action="l1.php">
 	<div class="container">
 		<h2>Login</h2>
 		<div class="row100">

@@ -136,7 +136,17 @@ body{
 
 
 
-
+input[type="Submit"]
+{
+	border: none;
+	padding: 7px 35px;
+	cursor: pointer;
+	outline: none;
+	background: #45f3ff;
+	color: #000;
+	font-size: 18px;
+	border-radius: 2px;
+}
 
 
 
