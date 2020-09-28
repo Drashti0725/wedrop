@@ -1,8 +1,7 @@
 <?php
 		include("connection.php");
-		//session_start();
-		//$_SESSION['yes']="no";
-		
+        session_start();
+        	
         $username = $_POST['username'];
         $password = $_POST['password'];
 
@@ -19,20 +18,18 @@
         {
             if($db_password == $password)
             {
-                    header("location:index.php");
+                    header("location:index.html");
             }   
             else
             {
-                echo "<script>alert('Password Invalid...!')</script>";
-               
-            } header("location:login.php");
+                header("location:login.php");
+                echo "<script>alert('Password Invalid...!')</script>";  
+            }
         }
         else
         {
             header("location:login.php");
             echo "<script>alert('User Name Invalid...!')</script>";
-            
-
         }
 
 ?>

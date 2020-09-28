@@ -100,7 +100,7 @@ body{
 .container .row100 .inputBox input:focus + .text,
 .container .row100 .inputBox input:valid + .text{
 	top: -35px;
-	left: -10px;
+	left: -10px;                                             
 }
 .container .row100 .inputBox .line{
 	position: absolute;
@@ -132,10 +132,6 @@ body{
 	top: -35px;
 	left: -10px;f
 }
-
-
-
-
 input[type="Submit"]
 {
 	border: none;
@@ -147,6 +143,3 @@ input[type="Submit"]
 	font-size: 18px;
 	border-radius: 2px;
 }
-
-
-
