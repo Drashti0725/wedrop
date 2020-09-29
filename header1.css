@@ -18,7 +18,7 @@ body{
 }
 .menu-area li:hover{
 
-	background: #45f3ff;
+	background: #06F0F6;
 }
 .menu-area > ul{
 	list-style: none;
@@ -106,7 +106,7 @@ a:link {
 	z-index: 9999;
 }
 .dropdown li{
-	background: #70C2C4;
+	background: #45f3ff;
 	display: none;
 	width: 100px;
 	z-index: 99999999;

@@ -1,6 +1,6 @@
 <?php
 	require_once("connection.php");
-	$viewid=$_GET['viewid'];
+	$viewid = $_GET['viewid'];
     $query = "SELECT * FROM user_registratiton where id='".$viewid."'";
    
 	$result = mysqli_query($con, $query);
@@ -19,92 +19,99 @@
 	}
 ?>    
 
-<!-- <!?php
-		require_once("connection.php");
 
-		$id=$_GET['id'];
-		$query =" select * from user_registration where id='".$id."'";
-		$result = mysqli_query($con,$query);
-
-		 while($row=mysqli_fetch_assoc($result))
-        {
-            $id = $row['id'];
-            $name = $row['name'];
-            $des = $row['des'];
-            $dom = $row['dom'];
-            $pom = $row['pom'];
-            $age_on_dom = $row['age_on_dom'];
-            $nativeplace = $row['nativeplace'];
-            $forc = $row['forc'];
-            $dependents = $row['dependents'];
-            $brief_of_incident = $row['brief_of_incident'];
-            $contribution =$row['contribution'];
-            $image =$row['image'];
-        }
-                           
-?> -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bravehearts Information</title>
-	<link rel="stylesheet" a href="CSS/bootstrap.css">
+	<title>user Information</title>
+	
 	<style>
-		h3{
-		background-color: #254441;
+		*{
+			font-family: 'Poppins' , sans-serif;
+		}
+		body{
+		background-color: #000;
+		color :#45f3ff;
+		margin-left: 20%;
+		margin-top: 120px;
+	}
+	tr{
+			font-size: 20px;
+            letter-spacing: 0px;
+            height: 30px;
+            text-align: left;
+            border-bottom: 3px solid #45f3ff;    
+	}
+	td{
+		 font-size: 18px;
+            padding: 5px;
+            width: 300px;
+            position: all;
+            
+            border-bottom: 3px solid #45f3ff;
+	}
+	.abcd{
+		width: 50px;
+		border-bottom: none;
+	}
+	.aaaa{
+		width: 50px;
+		border-bottom: none;
 	}
 	</style>
 </head>
-<body class="bg-dark">
-							<form action="---update.php?bh_up_id=<?php echo $id ?>" method="POST" enctype="multipart/form-data">
-							 <table class="table table-bordered">
-							  
+<body >
+							<!--form action="---update.php?bh_up_id=<?php echo $id ?>" method="POST" enctype="multipart/form-data"-->
+							<h1><label style="background: #45f3ff; border: 5px; padding: 10px; border-radius: 5PX; color: #000; margin-left: 350px">
+									<?php 
+										echo $firstname; echo '  '; echo $lastname;echo '  '; echo 'detail';
+									?>
+								</label>
+							</h1><br><br>
+							 <table>
+							  <center>
 							 	<tr>
-							 		<td><b>Id</td>
-							 		<td><?php echo $id ?></td>
-							 	</tr>
+							 		<td style="text-align: right;letter-spacing: 2px">Id : </td><td class="aaaa"></td>
+							 		<td style="width: 500px"><?php echo $id ?></td>
+							 	</tr><tr class="abcd"></tr>
 							 	<tr>
-							 		<td><b>First Name</td>
+							 		<td style="text-align: right;letter-spacing: 2px">First Name : </td><td class="aaaa"></td>
 							 		<td><?php echo $firstname ?></td>
-							 	</tr>
+							 	</tr><tr class="abcd"></tr>
 							 	<tr>
-							 		<td><b>lastname</td>
+							 		<td style="text-align: right;letter-spacing: 2px">Last Name : </td><td class="aaaa"></td>
 							 		<td><?php echo $lastname ?></td>
-							 	</tr>
+							 	</tr><tr class="abcd"></tr>
 							 	<tr>
-							 		<td><b>email</td>
+							 		<td style="text-align: right;letter-spacing: 2px">Email : </td><td class="aaaa"></td>
 							 		<td><?php echo $email ?></td>
-							 	</tr>
+							 	</tr><tr class="abcd"></tr>
 							 	<tr>
-							 		<td><b>contact no</td>
+							 		<td style="text-align: right;letter-spacing: 2px">Contact No : </td><td class="aaaa"></td>
 							 		<td><?php echo $cno ?></td>
-							 	</tr>
+							 	</tr><tr class="abcd"></tr>
 							 	<tr>
-							 		<td><b>User name </td>
+							 		<td style="text-align: right;letter-spacing: 2px">User Name : </td><td class="aaaa"></td>
 							 		<td><?php echo $username ?></td>
-							 	</tr>
+							 	</tr><tr class="abcd"></tr>
 						 		<tr>
-							 		<td><b>password</td>
+							 		<td style="text-align: right;letter-spacing: 2px">Password : </td><td class="aaaa"></td>
 							 		<td><?php echo $password ?></td>
-							 	</tr>
+							 	</tr><tr class="abcd"></tr>
 							 	<tr>
-							 		<td><b>City</td>
+							 		<td style="text-align: right;letter-spacing: 2px">City : </td><td class="aaaa"></td>
 							 		<td><?php echo $city ?></td>
-							 	</tr>
-							 	
+							 	</tr><tr class="abcd"></tr>
+							 	</center>
 							 	</table>
+							 	<a  href="dispuser.php"><button style="background: #45f3ff;margin-left: 20px">  <b style="text-decoration: none; color: #000; font-size: 25px;"> Back</b></button></a>
 
-							 	<a  href="braveheartedit.php?editid=<?php echo $id ?>">Edit</a>
-                                <a  href="braveheartdelete.php?deleteid=<?php echo $id ?>">Delete</a>
+							 	<a  href="vieweidit.php?editid=<?php echo $id ?>" ><button style="background: #45f3ff; margin-left: 350px"> <b style="text-decoration: none; color: #000; font-size: 25px;"> Edit</b></button></a>
+                                
+                                <a  href="braveheartdelete.php?deleteid=<?php echo $id ?>"><button style="background: #45f3ff; margin-left: 240px;"> <b style="text-decoration: none; color: #000; font-size: 25px;">Delete</b></button></a>
 
-							 	<div class="form-group">
-							 		<center><a  href="dispuser.php">Back</a></center>
-							 	</div>
+							 	
 							 	
 							  </form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 </body>
 </html>
