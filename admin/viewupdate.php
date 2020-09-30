@@ -12,22 +12,16 @@
         $city = $_POST['city'];
 
         $query =" UPDATE `user_registratiton` SET `firstname`='".$firstname."',`lastname`='".$lastname."',`email`='".$email."',`cno`='".$cno."',`username`='".$username."',`password`='".$password."',`city`='".$city."' WHERE id='".$id."' ";
-        // $query = "update user_registration SET firstname='".$firstname."', lastname ='".$lastname."', email='".$email."', cno='".$cno."', username='".$username."', password='".$password."', city='".$city."' where id='".$id."' ";
-        // $result = mysqli_query($con, $query);
-        
-        // if($result)
-        // {
-        // 	header("location:regview.php");
-        // }
-        // else
-        // {
-        // 	echo'please check your query';
-        // }
+        $result = mysqli_query($con,$query);
+
+        if($result)
+        {
+            header("location:dispuser.php");
+        }        
         
 	}
     else
 	{
 		header("location:regview.php");
-		//echo "check...";
 	}
 ?>

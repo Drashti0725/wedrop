@@ -109,10 +109,11 @@
         
 		$result = mysqli_query($con,"INSERT INTO `user_registratiton` (`id`, `firstname`, `lastname`, `email`, `cno`, `username`, `password`, `city`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, '$firstname', '$lastname', '$email', '$cno', '$username', '$password', '$city', '$currentTime', '$currentTime', NULL)");
 		
-		echo "recorde successfully inserted...";
+            header("location:login.php");
     }
     else
     {
- 		echo "recorde not inserted...";	
+ 		echo "record not inserted...";	
     }
+    
 ?>

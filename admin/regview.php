@@ -108,7 +108,7 @@
 
 							 	<a  href="vieweidit.php?editid=<?php echo $id ?>" ><button style="background: #45f3ff; margin-left: 350px"> <b style="text-decoration: none; color: #000; font-size: 25px;"> Edit</b></button></a>
                                 
-                                <a  href="braveheartdelete.php?deleteid=<?php echo $id ?>"><button style="background: #45f3ff; margin-left: 240px;"> <b style="text-decoration: none; color: #000; font-size: 25px;">Delete</b></button></a>
+                                <a  href="deleteid.php?deleteid=<?php echo $id ?>"><button style="background: #45f3ff; margin-left: 240px;"> <b style="text-decoration: none; color: #000; font-size: 25px;">Delete</b></button></a>
 
 							 	
 							 	

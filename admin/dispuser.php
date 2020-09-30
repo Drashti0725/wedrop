@@ -17,14 +17,14 @@
         }
         table{
             background: #000;
-            margin-top: 30px;
+            margin-top: 20px;
         }
         tr{
             color: #45f3ff;
         }
         h1{
             color: #45f3ff;
-            margin-top: 100px;
+            margin-top: 80px;
             letter-spacing: 2px;
         }
         .abcd{
@@ -50,7 +50,7 @@
             width: 15px;
         }
         tr{
-            height: 50px;
+            height: 10px;
         }
     </style>
     
@@ -68,7 +68,7 @@
                 <th class="abcd"> ID </th><th></th>
                 <th class="abcd"> Frist Name </th><th></th>
                 <th class="abcd"> Last Name </th><th></th>
-                <th class="abcd"> View </th><th></th>
+             <!--    <th class="abcd"> View </th><th></th> -->
             </tr>    <tr></tr>
             <?php
                 while($row = mysqli_fetch_assoc($result)) 
@@ -82,8 +82,8 @@
                 <td class="aaaa"><?php echo $firstname ?></td><td></td>
                 <td class="aaaa"><?php echo $lastname ?></td><td></td>
                 <td class="aaaa">
-                    <a style="text-decoration: none; color: #45f3ff;" href="regview.php?viewid=<?php echo $id ?>">
-                        View
+                    <a style="text-decoration: none; color: #45f3ff;" href="regview.php?viewid=<?php echo $id ?>"><center><button style="width: 100px; height: 40px; background: #45f3ff;color: #000;font-size: 20px; border: 2; border-radius: 10px;font-weight: 30">
+                        View</button></center>
                     </a>
                 </td><td>
                 </td>
