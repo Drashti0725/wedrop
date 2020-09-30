@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,7 +75,7 @@
 	$currentTime = date( 'd-m-Y h:i:s A', time () );
 	 
 	if(isset($_POST['Submit']))
-	{    
+	{
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
 		$email = $_POST['email'];
@@ -86,9 +85,9 @@
 		$result = mysqli_query($con,"INSERT INTO `user_registratiton` (`id` , `firstname` , `lastname` , `email` , `cno` , `msg` , `created_at` ) VALUES ('', '$firstname', '$lastname', '$email', '$cno', '$msg', '$currentTime')");
 		
 		echo "recorde successfully inserted...";
-    }
-    else
-    {
- 		echo "recorde not inserted...";	
-    }
+	}
+	else
+	{
+		echo "recorde not inserted...";	
+	}
 ?>

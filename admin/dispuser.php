@@ -3,8 +3,7 @@
     $query = "SELECT * FROM user_registratiton";
    
     $result = mysqli_query($con, $query);
-?>    
-
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +52,6 @@
             height: 10px;
         }
     </style>
-    
 </head>
 <body>
     <?php 
@@ -87,11 +85,11 @@
                     </a>
                 </td><td>
                 </td>
-            </tr>         
-            <tr></tr> 
-            <?php 
-                } 
-            ?>                                                                   
+            </tr>
+            <tr></tr>
+            <?php
+                }
+            ?>
         </table>
         <?php 
             }
@@ -101,4 +99,4 @@
             }
         ?>
     </body>
-</html> 
+</html>

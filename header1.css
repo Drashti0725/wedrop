@@ -45,23 +45,17 @@ a:link {
   background-color: transparent;
   text-decoration: none;
 }
-
-
 /* Login SignUp Btn */
-
 .menu-area > ul >li:nth-child(6){
 	position: absolute;
 	right: 100px;
 	box-sizing: border-box;
 }
-
-
 .menu-area > ul >li:nth-child(7){
 	position: absolute;
 	right: 0;
 	box-sizing: border-box;
 }
-
 .menuarea ul{
 	list-style: none;
 }
@@ -82,7 +76,7 @@ a:link {
 	padding: 10px;
 	margin: 550px;
 	width: 200px;
-	display: inline-block;
+	display: inline-bl ock;
 	background: #70C2C4;
 	color: #000;
 }

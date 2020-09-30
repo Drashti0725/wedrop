@@ -155,7 +155,7 @@ body{
 .container .row100 .inputBox textarea:focus + .text,
 .container .row100 .inputBox textarea:valid + .text{
 	top: -35px;
-	left: -10px;f
+	left: -10px;
 }
 input[type="Submit"]
 {
