@@ -1,4 +1,3 @@
-
 <?php
 	require_once("connection.php");
 
@@ -8,10 +7,14 @@
 	$id=$_GET['deleteid'];
 
 	//$query=mysqli_query($con,"DELETE FROM `user_registratiton` WHERE id='$id'");
-	$query=mysqli_query($con," UPDATE `user_registratiton` SET `deleted_at`='".$currentTime."' WHERE id='".$id."' ");
+	$query=mysqli_query($con," UPDATE `feedback` SET `deleted_at`='".$currentTime."' WHERE id='".$id."' ");
 	$result = mysqli_query($con, $query);
-	if ($result) {
+	if ($result) 
+	{
 		echo "sucsecc";
 	}
-	echo"<script>window.location='dispuser.php'</script>";
+	else {
+		echo "not do";
+	}
+	//echo"<script>window.location='disfeed.php'</script>";
 ?>

@@ -130,17 +130,17 @@
 						<input type="text" name="type">
 							Driver Type :
 					</span>
-					<select name="type" style="color: #45f3ff;padding: 0 200px;">
+					<select name="type" style="color: #45f3ff;padding: 0 180px;">
 					<option style="background-color: #000">--select--</option>
-					<option value="car drive" style="background-color: #000">car drive</option>
-					<option value="food deliver" style="background-color: #000">food deliver</option>
+					<option value="car drive" style="background-color: #000;  ">car drive</option>
+					<option value="food deliver" style="background-color: #000; width: 150px">food deliver</option>
 					<option value="freight deliver" style="background-color: #000">freight deliver</option>
 					</select>
 					<span class="line"></span>
 				</div>
 			</div>
 		</div>		
-
+    
 		<div class="row100">
 			<div class="col">
 				<input type="Submit" name="Submit" value="Sign Up">
@@ -149,7 +149,6 @@
 	</div>
 </div>
 </form>
-
 <?php
 	include("connection.php");
 	date_default_timezone_set('Asia/Kolkata');
@@ -169,8 +168,7 @@
 		$expirience_year = $_POST['expirience_year'];
 		$type = $_POST['type'];
         
-		$result = mysqli_query($con,"INSERT INTO `driver_registration` (`id`, `firstname`, `lastname`, `email`, `cno`, `username`, `password`, `city`, `vehicle_type`, `vehicle_no`, `driving_license`, `expirience_year`, `type`, `created_at`, `updated_at`, `deleted_at`) VALUES ('', '$firstname', '$lastname', '$email', '$cno', '$username', '$password', '$city', '$vehicle_type', '$vehicle_no', '$driving_license', '$expirience_year', '$type', '$currentTime', '$currentTime', NULL);");
-		
+		$result = mysqli_query($con,"INSERT INTO `driver_registration` (`id`, `firstname`, `lastname`, `email`, `cno`, `username`, `password`, `city`, `vehicle_type`, `vehicle_no`, `driving_license`, `expirience_year`, `type`, `created_at`, `updated_at`, `deleted_at`) VALUES ('', '$firstname', '$lastname', '$email', '$cno', '$username', '$password', '$city', '$vehicle_type', '$vehicle_no', '$driving_license', '$expirience_year', '$type', '$currentTime', '$currentTime', NULL);");		
 		echo "recorde successfully inserted...";
     }
     else
@@ -178,7 +176,5 @@
  		echo "recorde not inserted...";	
     }
 ?>
-
-
 </body>
 </html>

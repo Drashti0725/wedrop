@@ -14,8 +14,7 @@
 		$cno = $row['cno'];
 		$username = $row['username'];
 		$password = $row['password'];
-		$city = $row['city'];
-		
+		$city = $row['city'];	
 	}
 ?>    
 <!DOCTYPE html>
@@ -31,23 +30,23 @@
 	box-sizing: border-box;
 	font-family: 'Poppins' , sans-serif;
 }
-body{
+body
+{
 	display: all;
 	justify-content: all;
 	align-items: center;
 	margin-top: 10px;
 	min-height: 10vh;
-	background:#000;
-	
+	background:#000;	
 }
-.container{
+.container
+{
 	overflow-x: hidden;
-
 	width: 100%;
 	padding: 0%;
-
 }
-.container h2{
+.container h2
+{
 	width: 100%;
 	color: #45f3ff;
 	font-size: 36px;
@@ -55,21 +54,24 @@ body{
 	margin-bottom: 10px;
 	margin-top: 60px;
 }
-.container .row100{
+.container .row100
+{
 	position: relative;
 	width: 100%;
 	padding-left: 30%;
 	padding-right: 30%;
 	
 }
-.container .row100 .col{
+.container .row100 .col
+{
 	position: relative;
 	width: 100%;
 	padding: 0 10px;
 	margin: 30px 0 10px;
 	transition: 0.5s;
 }
-.container .row100 .inputBox{
+.container .row100 .inputBox
+{
 	position: relative;
 	width: 100%;
 	height: 40px;
@@ -77,7 +79,8 @@ body{
 }
 .container .row100 .inputBox input,
 .container .row100 .inputBox select,
-.container .row100 .inputBox.textarea textarea{
+.container .row100 .inputBox.textarea textarea
+{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -90,8 +93,9 @@ body{
 	 z-index: 1;
 	color: #000;
 }
-.container .row100 .inputBox input[type='file'] {
-  position: absolute;
+.container .row100 .inputBox input[type='file'] 
+{
+	position: absolute;
 	width: 100%;
 	height: 100%;
 	background: transparent;
@@ -102,7 +106,9 @@ body{
 	padding: 5px 140px;
 	z-index: 1;
 	color: #000;
-}.container .row100 .inputBox .text select{
+}
+.container .row100 .inputBox .text select
+{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -112,7 +118,8 @@ body{
 	transition: 0.5s;
 	pointer-events: none;
 }
-.container .row100 .inputBox .text{
+.container .row100 .inputBox .text
+{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -123,11 +130,13 @@ body{
 	pointer-events: none;
 }
 .container .row100 .inputBox input:focus + .text,
-.container .row100 .inputBox input:valid + .text{
+.container .row100 .inputBox input:valid + .text
+{
 	top: -35px;
 	left: -10px;                                             
 }
-.container .row100 .inputBox .line{
+.container .row100 .inputBox .line
+{
 	position: absolute;
 	bottom: 0;
 	display: block;
@@ -139,21 +148,25 @@ body{
 	pointer-events: none;
 }
 .container .row100 .inputBox input:focus ~ .line,
-.container .row100 .inputBox input:valid ~ .line{
+.container .row100 .inputBox input:valid ~ .line
+{
 	height: 100%;
 }
-.container .row100 .inputBox.textarea{
+.container .row100 .inputBox.textarea
+{
 	position: relative;
 	width: 100%;
 	height: 100px;
 	padding: 10px 0;
 }
-.container .row100 .inputBox.textarea textarea{
+.container .row100 .inputBox.textarea textarea
+{
 	height: 100%;
 	resize: none;
 }
 .container .row100 .inputBox textarea:focus + .text,
-.container .row100 .inputBox textarea:valid + .text{
+.container .row100 .inputBox textarea:valid + .text
+{
 	top: -35px;
 	left: -10px;
 }
@@ -174,14 +187,15 @@ input[type="Submit"]
 	<form action="viewupdate.php" method="POST">
 	<div class="container">
 		<h2>Edit Id</h2>
+		
 		<div class="row100">
 			<div class="col">
 				<div class="inputBox">
-					<input type="hidden" name="id" value="<?php echo $id ?>">
-					
+					<input type="hidden" name="id" value="<?php echo $id ?>">					
 				</div>
 			</div>
 		</div>		
+
 		<div class="row100">
 			<div class="col">
 				<div class="inputBox">
@@ -210,6 +224,7 @@ input[type="Submit"]
 				</div>
 			</div>
 		</div>
+
 		<div class="row100">
 			<div class="col">
 				<div class="inputBox">
@@ -223,7 +238,7 @@ input[type="Submit"]
 		<div class="row100">
 			<div class="col">
 				<div class="inputBox">
-					<input type="text" placeholder="Username" name="username" value="<?php echo $username ?>">					
+					<input type="text" placeholder="Username" name="username" value="<?php echo $username ?>">		
 					<span class="text">User Name</span>
 					<span class="line"></span>
 				</div>

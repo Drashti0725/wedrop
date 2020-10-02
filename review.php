@@ -7,11 +7,11 @@
 </head>
 <body>
 	<?php
-		include 'header1.php';
-	?>	
-	<form>
+		include 'header1.php';	
+	?>							
+	<form method="POST">
 	<div class="container">
-		<h2>Contact Us</h2>
+		<h2>Contact Us</h2>    
 		<div class="row100">
 			<div class="col">
 				<div class="inputBox">
@@ -20,7 +20,7 @@
 					<span class="line"></span>
 				</div>
 			</div>
-
+                                                                        
 			<div class="col">
 				<div class="inputBox">
 					<input type="text" name="lastname" required="required">
@@ -66,9 +66,9 @@
 	</div>
 </div>
 </form>
-</body>
+</body>                                                
 </html>
-
+	
 <?php
 	include("connection.php");
 	date_default_timezone_set('Asia/Kolkata');
@@ -82,12 +82,17 @@
 		$cno = $_POST['cno'];
 		$msg = $_POST['msg'];
 
-		$result = mysqli_query($con,"INSERT INTO `user_registratiton` (`id` , `firstname` , `lastname` , `email` , `cno` , `msg` , `created_at` ) VALUES ('', '$firstname', '$lastname', '$email', '$cno', '$msg', '$currentTime')");
-		
-		echo "recorde successfully inserted...";
-	}
-	else
-	{
-		echo "recorde not inserted...";	
-	}
+		$result = mysqli_query($con,"INSERT INTO `feedback`(`firstname`, `lastname`, `email`, `cno`, `msg`, `created_at`) VALUES ('$firstname','$lastname','$email','$cno','$msg','$currentTime')");
+			
+		if($result)
+		{
+			echo "<script>alert('yes!')</script>";
+		}
+		else
+		{
+		echo "<script>alert('  No!')</script>";		
+		}	
+			 
+	} 
+	
 ?>

@@ -11,7 +11,7 @@
 		<ul>
 			
 			<li><u><b style="font-family: Segoe Print">WEDROP</b></u></li>
-			<li><a href="header.php"style="color: #000000; text-decoration: none;">Home</a></li>
+			<li><a href="header1.php"style="color: #000000; text-decoration: none;">Home</a></li>
 
 			<li><a href="#"style="color: #000000; text-decoration: none;">Service</a>
 				<ul class="dropdown">
@@ -30,7 +30,6 @@
 			<li><a href="review.php"style="color: #000000; text-decoration: none;">Review</a></li>
 			<li><a href="#"style="color: #000000; text-decoration: none;">AboutUs</a></li>
 		</ul>
-
 	</div>
 	</div>
 </body>

@@ -17,7 +17,6 @@ body{
 }
 .container{
 	overflow-x: hidden;
-
 	width: 100%;
 	padding: 0%;
 
@@ -99,7 +98,7 @@ body{
 }
 .container .row100 .inputBox input:focus + .text,
 .container .row100 .inputBox input:valid + .text{
-	top: -35px;
+	top: -45px;
 	left: -10px;                                             
 }
 .container .row100 .inputBox .line{

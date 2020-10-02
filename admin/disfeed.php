@@ -1,6 +1,6 @@
 <?php
     require_once("connection.php");
-    $query = "SELECT * FROM user_registratiton WHERE `deleted_at` IS NULL";
+    $query = "SELECT * FROM feedback WHERE `deleted_at` IS NULL";
    
     $result = mysqli_query($con, $query);
 ?>
@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>view records</title>
+    <title>view reviews</title>
     <style type="text/css">
         body{
             font-family: sans-serif;
@@ -27,11 +27,13 @@
             letter-spacing: 2px;
         }
         .abcd{
-             font-size: 26px;
+             font-size: 18px;
             position: all;
             padding: 10px;
+            background: #45f3ff;
+            color: #000;
             text-shadow: white;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-align: left;
             border-bottom: 3px solid #45f3ff;    
         }
@@ -54,34 +56,45 @@
     </style>
 </head>
 <body>
+    <form action="deletefeed.php">
     <?php 
     if (mysqli_num_rows($result) > 0)
     {
     ?>
     <center>
-        <h1> User Information </h1>
+        <h1> User reviews </h1>
         <table style="width: 80%" align="center">
             <tr style="width: 100%" align="center">
              
-                <th class="abcd"> ID </th><th></th>
                 <th class="abcd"> Frist Name </th><th></th>
-                <th class="abcd"> Last Name </th><th></th>
+                <th class="abcd"> Last Name </th><th></th>                
+                <th class="abcd"> Email </th><th></th>
+                <th class="abcd"> Mobile </th><th></th>
+                <th class="abcd"> Review </th><th></th>
+
              <!--    <th class="abcd"> View </th><th></th> -->
             </tr>    <tr></tr>
             <?php
-                while($row = mysqli_fetch_assoc($result)) 
+                while($row = mysqli_fetch_assoc($result))   
                 {
                     $id = $row['id'];
                     $firstname = $row['firstname'];
                     $lastname = $row['lastname'];
+                    $email = $row['email'];
+                    $cno = $row['cno'];
+                    $msg = $row['msg'];
+            
+
             ?>
             <tr align="center">
-                <td class="aaaa"><?php echo $id ?></td><td></td>
                 <td class="aaaa"><?php echo $firstname ?></td><td></td>
                 <td class="aaaa"><?php echo $lastname ?></td><td></td>
+                <td class="aaaa"><?php echo $email ?></td><td></td>
+                <td class="aaaa"><?php echo $cno ?></td><td></td>
+                <td class="aaaa"><?php echo $msg ?></td><td></td>
                 <td class="aaaa">
-                    <a style="text-decoration: none; color: #45f3ff;" href="regview.php?viewid=<?php echo $id ?>"><center><button style="width: 100px; height: 40px; background: #45f3ff;color: #000;font-size: 20px; border: 2; border-radius: 10px;font-weight: 30">
-                        View</button></center>
+                    <a href="deletefeed.php?deleteid=<?php echo $id ?>"><center><button style="width: 80px; height: 40px; background: #45f3ff;color: #000;font-size: 20px; border: 2; border-radius: 10px;font-weight: 30">
+                        Delete</button></center>
                     </a>
                 </td><td>
                 </td>
@@ -98,5 +111,6 @@
                 echo "0 results";
             }
         ?>
+    </form>
     </body>
 </html>
