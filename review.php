@@ -16,7 +16,7 @@
 			<div class="col">
 				<div class="inputBox">
 					<input type="text" name="firstname" required="required">
-					<span class="text">First Name</span>
+					<span class="text">First  Name</span>
 					<span class="line"></span>
 				</div>
 			</div>
