@@ -12,6 +12,7 @@ body{
 	padding: 20px 0;
 	background: #45f3ff;
 	display: flex;
+	
 	border-radius: 10px;
 	box-shadow: 0 10px 30px rgba(0,0,0,.3)
 }

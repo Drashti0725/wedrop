@@ -269,12 +269,76 @@ a:link {
 .social a:nth-child(4) i{
 	color: #4ECCE8;
 }
+/*---------------------------------------------------------------------------------*/
+.blck{
+	position: absolute;
+	background: #45f3ff;
+	width: 570px;
+	color: #000;
+	height: 350px;
+	margin-top: 150px;
+	margin-left: 131px;
+}
+.blck h1{
+	color: #000;
+	letter-spacing: 2px;
+	margin-right: 40px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.blck h6{
+	color: #000;
+	font-size: 15px;
+	font-weight: lighter;
+	text-align: right;
+	letter-spacing: 2px;
+	margin-right: 40px;
+	margin-top: 20px;
+	text-align: center;
+}
+.blck button{
+	background: #000;
+	color: #45f3ff;
+	width: 150px;
+	height: 40px;
+	border:none;
+	text-transform: uppercase;
+}
+
+.blck a{
+	text-decoration: underline;
+	color: #000;
+	margin-top: 250px;
+}
+.imag{
+	position: absolute;
+	width: 600px;
+	color: #000;
+	height: 400px;
+	margin-top: 168px;
+	margin-left: 700px;
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------*/
 .slide{
 	background: #000;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -283,7 +347,7 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 140vh;
+  min-height: 250vh;
 }
 .swiper-container 
 {
@@ -310,7 +374,7 @@ a:link {
 }
 .footer{
 	width: 100%;
-	margin-top: -15%;
+	margin-top: -40%;
 	min-height: 100%;
 	background: #000;
 	display: block;	
@@ -451,7 +515,7 @@ li i{
 
 	
 	<ul class="aa">
-		<li class="bb">
+		<li class="bb"  style="border-bottom: 2px solid #000; border-width: 8%;">
 			<a href="driverreg.php">
 				<div class="icon">
 					<i class="fa fa-life-ring" aria-hidden="true"></i>
@@ -496,10 +560,31 @@ li i{
 		</li>
 	</ul>
 
+<!-- -------------------------------------------------------------------------------- -->
+
+<ul class="blck">
+	<h1>Get in the driver's seat and get paid</h1>
+	<h6>Drive on the platform with the largest network of active riders.</h6>
+	<button>Sign up to drive</button><br><br>
+	<a href="drive.php">Learn more about driving and delivering</a>
+</ul>
+
+<ul class="imag">
+	<img src="image/13.jpg">
+</ul>
 
 
 
 
+
+
+
+
+
+
+
+
+<!-- ----------------------------------------------------------------------------------- -->
 	<div class="social">
 		<a href="#">
 			Facebook
