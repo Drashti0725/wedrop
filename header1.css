@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
 body{
 	margin: 0;
 	padding: 0;
-	height: 100px;
-	font-family: sans-serif;
+	/*height: 100px;*/
+	font-family: 'Poppins',sans-serif;
 }
 .menu-area ul{
 	list-style: none;
 }
 .menu-area{
-	display: unset;
+	display: flex;
 	text-align: center;
 	position: relative;
 	top: 5%;

@@ -181,8 +181,7 @@ a:link {
 	background: #45f3ff;
 	display: flex;
 	border-radius: 0px;
-	box-shadow: 0 10px 30px rgba(0,0,0,.3);
-	
+	box-shadow: 0 10px 30px rgba(0,0,0,.3)
 }
 .aa .bb{
 	list-style: none;
@@ -302,12 +301,16 @@ a:link {
 	background: #000;
 	color: #45f3ff;
 	width: 150px;
-	height: 50px;
-	letter-spacing: 1px;
+	height: 40px;
 	border:none;
 	text-transform: uppercase;
 }
 
+.blck a{
+	text-decoration: underline;
+	color: #000;
+	margin-top: 250px;
+}
 .imag{
 	position: absolute;
 	width: 600px;
@@ -504,8 +507,8 @@ li i{
 
 	
 	<ul class="aa">
-		<li class="bb">
-			<a href="javascript:void(0)" onclick="changedata('drive')">
+		<li class="bb"  style="border-bottom: 2px solid #000; border-width: 8%;">
+			<a href="driverreg.php">
 				<div class="icon">
 					<i class="fa fa-life-ring" aria-hidden="true"></i>
 				</div>
@@ -514,7 +517,7 @@ li i{
 		</li>
 
 		<li class="bb">
-			<a href="javascript:void(0)" onclick="changedata('ride')">
+			<a href="#">
 				<div class="icon">
 					<i class="fa fa-suitcase" aria-hidden="true"></i>				
 				</div>
@@ -523,7 +526,7 @@ li i{
 		</li>
 
 		<li class="bb">
-			<a href="javascript:void(0)" onclick="changedata('eat')">
+			<a href="#">
 				<div class="icon">
 					<i class="fa fa-cutlery" aria-hidden="true"></i>
 				</div>
@@ -532,7 +535,7 @@ li i{
 		</li>
 
 		<li class="bb">
-			<a href="javascript:void(0)" onclick="changedata('freight')">
+			<a href="#">
 				<div class="icon">
 					<i class="fa fa-truck" aria-hidden="true"></i>
 				</div>
@@ -540,7 +543,7 @@ li i{
 			</a>
 		</li>
 		<li class="bb">
-			<a href="javascript:void(0)" onclick="changedata('bike')">
+			<a href="#">
 				<div class="icon">
 					<i class="fa fa-motorcycle" aria-hidden="true"></i>
 				</div>
@@ -549,18 +552,24 @@ li i{
 		</li>
 	</ul>
 
-
 <!-- -------------------------------------------------------------------------------- -->
 
 <ul class="blck">
-	<h1 class="h">Drive ::  Get in the driver's seat and get paid</h1>
+	<h1 class="h">Get in the driver's seat and get paid</h1>
 	<h6 class="j">Drive on the platform with the largest network of active riders.</h6>
-	<button class="b">Sign up to drive</button><br><br>
+	<button>Sign up to drive</button><br><br>
+	<a href="drive.php">Learn more about driving and delivering</a>
 </ul>
 
 <ul class="imag">
 	<img src="image/13.jpg">
 </ul>
+
+
+
+
+
+
 
 
 
@@ -593,16 +602,16 @@ li i{
 
 <div class="slide">
 <div class="swiper-container">
-<div class="swiper-wrapper">
-	<div class="swiper-slide"><img src="image/6.jpg"></div>
-	<div class="swiper-slide"><img src="image/7.jpg"></div>
-	<div class="swiper-slide"><img src="image/8.jpg"></div>
-	<div class="swiper-slide"><img src="image/9.jpg"></div>
-	<div class="swiper-slide"><img src="image/10.jpg"></div>
-	<div class="swiper-slide"><img src="image/11.jpg"></div>	
-	<div class="swiper-slide"><img src="image/12.jpg"></div>
-</div>
-<div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+    	<div class="swiper-slide"><img src="image/6.jpg"></div>
+    	<div class="swiper-slide"><img src="image/7.jpg"></div>
+    	<div class="swiper-slide"><img src="image/8.jpg"></div>
+    	<div class="swiper-slide"><img src="image/9.jpg"></div>
+    	<div class="swiper-slide"><img src="image/10.jpg"></div>
+    	<div class="swiper-slide"><img src="image/11.jpg"></div>	
+    	<div class="swiper-slide"><img src="image/12.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
 </div>
 </div>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -613,53 +622,20 @@ li i{
       centeredSlides: true,
       slidesPerView: 'auto',
       coverflowEffect: {
-	    rotate: 20,
-	    stretch: 40,
-	    depth: 200,
-	    modifier: 1,
-	    slideShadows: true,
+        rotate: 20,
+        stretch: 40,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
       },
-    loop:true,
-    autoplay:{
-  	delay:1000,
-  	disableOnInteraction: false,
+      loop:true,
+      autoplay:{
+      	delay:1000,
+      	disableOnInteraction: false,
       },
     });
   </script>
-  <script type="text/javascript">
-  	function changedata(name) {
-  		if(name === 'drive'){
-  		document.getElementsByClassName('h')[0].innerHTML = "drive :: Get in the driver's seat and get paid";
-  		document.getElementsByClassName('j')[0].innerHTML = "Drive on the platform with the largest network of active riders.";
-  		document.getElementsByClassName('b')[0].innerHTML = "Sign up to drive";
-  		
-  		}
-  		if(name === 'ride'){
-  		document.getElementsByClassName('h')[0].innerHTML = "Ride ::  Request a ride now";
-  		document.getElementsByClassName('j')[0].innerHTML = "Ride with us and enjoy trip";
-  		document.getElementsByClassName('b')[0].innerHTML = "Ride Now";
-  		
-  		}
-  		if(name === 'eat'){
-  		document.getElementsByClassName('h')[0].innerHTML = "eat ::  Discover delicious eats with us";
-  		document.getElementsByClassName('j')[0].innerHTML = "Order delivery from our restaurant you love at any time for you.";
-  		document.getElementsByClassName('b')[0].innerHTML = "Order Now";  		
-  		}
-  		if(name === 'freight'){
-  		document.getElementsByClassName('h')[0].innerHTML = "freight ::  A new direction for freight";
-  		document.getElementsByClassName('j')[0].innerHTML = "Greater transparency for carriers to do business together.";
-  		document.getElementsByClassName('b')[0].innerHTML = "Order Now";
-  		}
-  		if(name === 'bike'){
-  		document.getElementsByClassName('h')[0].innerHTML = "bike & scoot ::  Bike or scoot there";
-  		document.getElementsByClassName('j')[0].innerHTML = "Go farther and have more fun with electric bikes and scooters.";
-  		document.getElementsByClassName('b')[0].innerHTML = "Get a Ride";
-  		
 
-
-  		}
-  	}
-  </script>
 
 <div class="footer">
 	<div class="linne">
