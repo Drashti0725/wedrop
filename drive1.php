@@ -632,29 +632,35 @@ li i{
   		document.getElementsByClassName('h')[0].innerHTML = "drive :: Get in the driver's seat and get paid";
   		document.getElementsByClassName('j')[0].innerHTML = "Drive on the platform with the largest network of active riders.";
   		document.getElementsByClassName('b')[0].innerHTML = "Sign up to drive";
-  		
+		$(".imag").attr("src", "13.jpg");
+
   		}
   		if(name === 'ride'){
   		document.getElementsByClassName('h')[0].innerHTML = "Ride ::  Request a ride now";
   		document.getElementsByClassName('j')[0].innerHTML = "Ride with us and enjoy trip";
   		document.getElementsByClassName('b')[0].innerHTML = "Ride Now";
+		$(".imag").attr("src", "16.jpg");  		
   		
   		}
   		if(name === 'eat'){
   		document.getElementsByClassName('h')[0].innerHTML = "eat ::  Discover delicious eats with us";
   		document.getElementsByClassName('j')[0].innerHTML = "Order delivery from our restaurant you love at any time for you.";
-  		document.getElementsByClassName('b')[0].innerHTML = "Order Now";  		
+  		document.getElementsByClassName('b')[0].innerHTML = "Order Now";  
+		document.getElementsByClassName("imag").src="13.jpg";  		
+		
   		}
   		if(name === 'freight'){
   		document.getElementsByClassName('h')[0].innerHTML = "freight ::  A new direction for freight";
   		document.getElementsByClassName('j')[0].innerHTML = "Greater transparency for carriers to do business together.";
   		document.getElementsByClassName('b')[0].innerHTML = "Order Now";
+  		document.getElementsByClassName("imag").src="13.jpg";  		
+
   		}
   		if(name === 'bike'){
   		document.getElementsByClassName('h')[0].innerHTML = "bike & scoot ::  Bike or scoot there";
   		document.getElementsByClassName('j')[0].innerHTML = "Go farther and have more fun with electric bikes and scooters.";
   		document.getElementsByClassName('b')[0].innerHTML = "Get a Ride";
-  		
+		document.getElementsByClassName("imag").src="13.jpg";  		  		
 
 
   		}

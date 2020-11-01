@@ -4,9 +4,9 @@
 	if(isset($_POST['submit']))
 	{    
 	 
-		$lastname = $_POST['nm'];
+		$username = $_POST['username'];
 
-		echo $lastname;
+		echo $username;
 
  }
 ?>
