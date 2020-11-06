@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="footer.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+
+	<title>Responsive Footer</title>
+
+	<link rel="stylesheet" href="footer.css">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
 </head>
-<body>
-	<div class="footer">
-		<div class="inner-footer">
-			<div class="fooer-items">
-				<h1>wedrop</h1>
-				<p>
-					jfdc zx ndbvjs sdgfus dmjhfgs skdgfa zkdctsa sakytd sdjfyte zfsfyd sygfnnfb
+	<body>
+		<!-- <header>
+			<h1> Responsive Footer </h1>
+			<h2>Have a look</h2>
+			<h2><span>On Below Footer</span></h2>
+		</header>
+
+		The content of your page would go here. -->
+
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+          <!-- <img src="img/logo.png"> -->
+				<h3>We<span>Drop</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#">Blog</a>
+					|
+					<a href="#">About</a>
+					|
+					<a href="#">Contact</a>
 				</p>
+
+				<p class="footer-company-name">© 2019 Eduonix Learning Solutions Pvt. Ltd.</p>
 			</div>
 
-			<div class="fooer-items">
-				<h2>Quick Links</h2>
-				<ul>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-				</ul>
-			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>309 - Rupa Solitaire,
+						 Bldg. No. A - 1, Sector - 1</span>
+						Mahape, Navi Mumbai - 400710</p>
+				</div>
 
-
-			<div class="fooer-items">
-				<h2>Services</h2>
-				<ul>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-				</ul>
-			</div> 
-
-
-			<div class="fooer-items">
-				<h2>Contect Us</h2>
-				<ul>
-					<li><i class="fa fa-map-marker" aria-hidden="true"></i>1,sdu skd, bombay</li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i>999999999</li>
-					<li><i class="fa fa-envelope" aria-hidden="true"></i>abc@gmail.com</li>
-				</ul>
-				<div class="social-media">
-					<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 22-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="www.wedrop.com">support@eduonix.com</a></p>
 				</div>
 			</div>
-
-		</div>
-		<div class="footer-bottom">
-			Copyright &copy; Wedrop 2020.All rights reserved.
-		</div>
-	</div>
-</body>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					we started as a way to tap a button to get a ride has led to billions of moments of human connection as people around the world go all kinds of places in all kinds of ways with the help of our technology.</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

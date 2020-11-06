@@ -6,7 +6,7 @@
     <style type="text/css">
 
 	@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
-
+		
 body{
 	margin: 0;
 	padding: 0;
@@ -181,7 +181,8 @@ a:link {
 	background: #45f3ff;
 	display: flex;
 	border-radius: 0px;
-	box-shadow: 0 10px 30px rgba(0,0,0,.3)
+	box-shadow: 0 10px 30px rgba(0,0,0,.3);
+	
 }
 .aa .bb{
 	list-style: none;
@@ -269,12 +270,63 @@ a:link {
 .social a:nth-child(4) i{
 	color: #4ECCE8;
 }
+/*-----------------------------------------------------------------------------------*/
+.blck{
+	position: absolute;
+	background: #45f3ff;
+	width: 570px;
+	color: #000;
+	height: 350px;
+	margin-top: 150px;
+	margin-left: 131px;
+}
+.blck h1{
+	color: #000;
+	letter-spacing: 2px;
+	margin-right: 40px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.blck h6{
+	color: #000;
+	font-size: 15px;
+	font-weight: lighter;
+	text-align: right;
+	letter-spacing: 2px;
+	margin-right: 40px;
+	margin-top: 20px;
+	text-align: center;
+}
+.blck button{
+	background: #000;
+	color: #45f3ff;
+	width: 150px;
+	height: 50px;
+	letter-spacing: 1px;
+	border:none;
+	text-transform: uppercase;
+}
+.imag{
+	position: absolute;
+	width: 600px;
+	color: #000;
+	height: 400px;
+	margin-top: 168px;
+	margin-left: 700px;
+}
 
 
 
 
 
 
+
+
+
+
+
+/*-------------------------------------------------------------------------------------*/
 .slide{
 	background: #000;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -283,7 +335,7 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 140vh;
+  min-height: 250vh;
 }
 .swiper-container 
 {
@@ -303,156 +355,216 @@ a:link {
 
 
 
-.linne{
-	width: 100%;
-	height: 2px;
-	background: #45f3ff;
+
+
+footer{
+	position: fixed;
+	margin-bottom: 0;
+	margin-top: -500px;
 }
-.footer{
-	width: 100%;
-	margin-top: -15%;
-	min-height: 100%;
-	background: #000;
-	display: block;	
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
 }
-.inner-footer{
-	width: 95%;
-	margin: auto;
-	padding: 30px 10px;
-	display: flex;
-	flex-wrap: wrap;
+
+.footer-distributed{
+	background-color: #2c292f;
 	box-sizing: border-box;
-	justify-content: center;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	/*margin-top: 80px;*/
 }
-.fooer-items{
-	width: 25%;
-	padding: 10px 20px;
-	box-sizing: border-box;
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
 }
-h1{
-	padding: 10px 0;
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
 	font-size: 25px;
-	color:#45f3ff;
-	text-transform: uppercase;
-}
-.fooer-items p{
-	color: grey;
-	font-size: 16px;
-	text-align: justify;
-	line-height: 25px;
-}
-.hh{
-	margin: 10px 0;
-	color: gray;
-	font-size: 16px;
-	font-weight: lighter;
-	text-transform: uppercase;
-}
-.uull{
-	list-style: none;
-	color: #45f3ff;
-	font-size: 15px;
-	font-weight: lighter;
-	letter-spacing: 0.5px;
-}
-.uull a{
-	text-decoration: none;
-	outline: none;
-	color: #45f3ff;
-	transition: 0.3s;
-}
-.uull a:hover{
-	color: red;
-}
-/*ul li{
-	margin: 10px 0;
-	height: 25px;
-}*/
-li i{
-	margin-right: 20px;
-}
-.social-media{
-	width: 100%;
-	color: #45f3ff;
-	text-align: center;
-}
-.social-media a{
-	text-decoration: none;
-}
-.social-media i{
-	height: 15px;
-	width: 15px;
-	margin: 20px 5px;
-	padding: 10px;
-	color: #45f3ff;
+	width: 38px;
+	height: 38px;
 	border-radius: 50%;
-	border: 1px solid grey;
-	transition: 0.3s;
-}
-.social-media i:hover{
-	background: grey;	
-}
-.footer-bottom{
-	padding: 10px;
-	background: #45f4ff;	
-	color: #000;
-	font-size: 12px;
-	font-weight: 600;
-
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
 }
 
 
-@media screen and (max-width: 1085px){
-	.footer-items{
-		width: 50%;
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
 	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
 }
-
-
-
-
 
 
     </style>
 </head>
 <body>
-	<div class="menu-area">
+
+	<div class="menu-area" style="font-family: 'Poppins">
 		<ul>
-			<li><u><b style="font-family: Segoe Print" >WEDROP</b></u></li>
-			<li><a href="header1.php"style="color: #000000; text-decoration: none;">Home</a></li>
+			<li><u><b style="font: normal 26px 'Cookie', cursive;" >WeDrop</b></u></li>
+			<li><a href="index.php"style="color: #000000; text-decoration: none;">Home</a></li>
 
 			<li><a href="#"style="color: #000000; text-decoration: none;">Service</a>
 				<ul class="dropdown">
 				<li><a href="driverreg.php"style="color: #000000; text-decoration: none;">Drive</a></li>
 				<li><a href="#"style="color: #000000; text-decoration: none;">Ride</a></li>
-				<li><a href="#"style="color: #000000; text-decoration: none;">Eat</a></li>
+				<li><a href="eat.php"style="color: #000000; text-decoration: none;">Eat</a></li>
 				<li><a href="#"style="color: #000000; text-decoration: none;">Freight</a></li>
 				<li><a href="#"style="color: #000000; text-decoration: none; font-size: 17px;">Bike&Scoot</a></li>
 				</ul>
 			</li>
 			<li><a href="#"style="color: #000000; text-decoration: none;">Safty</a></li>
-			<li><a href="#"style="color: #000000; text-decoration: none;">Help</a></li>
+			<li><a href="help.php"style="color: #000000; text-decoration: none;">Help</a></li>
 			
 			<li><a href="login.php"style="color: #000000; text-decoration: none;">Login</a></li>
 			<li><a href="signup.php"style="color: #000000; text-decoration: none;">Sign Up</a></li>
 			<li><a href="review.php"style="color: #000000; text-decoration: none;">Review</a></li>
-			<li><a href="#"style="color: #000000; text-decoration: none;">AboutUs</a></li>
+			<li><a href="aboutus.php"style="color: #000000; text-decoration: none;">AboutUs</a></li>
 		</ul>
 	</div>
 	</div>
 
 
-
-
-
-
-
-
-
 	
 	<ul class="aa">
 		<li class="bb">
-			<a href="driverreg.php">
+			<a href="javascript:void(0)" onclick="changedata('drive')">
 				<div class="icon">
 					<i class="fa fa-life-ring" aria-hidden="true"></i>
 				</div>
@@ -461,7 +573,7 @@ li i{
 		</li>
 
 		<li class="bb">
-			<a href="#">
+			<a href="javascript:void(0)" onclick="changedata('ride')">
 				<div class="icon">
 					<i class="fa fa-suitcase" aria-hidden="true"></i>				
 				</div>
@@ -470,7 +582,7 @@ li i{
 		</li>
 
 		<li class="bb">
-			<a href="#">
+			<a href="javascript:void(0)" onclick="changedata('eat')">
 				<div class="icon">
 					<i class="fa fa-cutlery" aria-hidden="true"></i>
 				</div>
@@ -479,7 +591,7 @@ li i{
 		</li>
 
 		<li class="bb">
-			<a href="#">
+			<a href="javascript:void(0)" onclick="changedata('freight')">
 				<div class="icon">
 					<i class="fa fa-truck" aria-hidden="true"></i>
 				</div>
@@ -487,7 +599,7 @@ li i{
 			</a>
 		</li>
 		<li class="bb">
-			<a href="#">
+			<a href="javascript:void(0)" onclick="changedata('bike')">
 				<div class="icon">
 					<i class="fa fa-motorcycle" aria-hidden="true"></i>
 				</div>
@@ -497,9 +609,24 @@ li i{
 	</ul>
 
 
+ <!-- -------------------------------------------------------------------------------- -->
+
+	<ul class="blck">
+		<h1 class="h">Drive ::  Get in the driver's seat and get paid</h1>
+		<h6 class="j">Drive on the platform with the largest network of active riders.</h6>
+		<button class="b">Sign up to drive</button><br><br>
+	</ul>
+
+	<ul class="imag">
+		<img src="image/13.jpg" class="imgchange"  style="height: 332px;width: 480px;">
+	</ul>
 
 
 
+
+
+
+ <!-- ----------------------------------------------------------------------------------- -->
 	<div class="social">
 		<a href="#">
 			Facebook
@@ -523,98 +650,158 @@ li i{
 	</div>
 
 
-<div class="slide">
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-    	<div class="swiper-slide"><img src="image/6.jpg"></div>
-    	<div class="swiper-slide"><img src="image/7.jpg"></div>
-    	<div class="swiper-slide"><img src="image/8.jpg"></div>
-    	<div class="swiper-slide"><img src="image/9.jpg"></div>
-    	<div class="swiper-slide"><img src="image/10.jpg"></div>
-    	<div class="swiper-slide"><img src="image/11.jpg"></div>	
-    	<div class="swiper-slide"><img src="image/12.jpg"></div>
-    </div>
-    <div class="swiper-pagination"></div>
-</div>
-</div>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 20,
-        stretch: 40,
-        depth: 200,
-        modifier: 1,
-        slideShadows: true,
-      },
-      loop:true,
-      autoplay:{
-      	delay:1000,
-      	disableOnInteraction: false,
-      },
-    });
-  </script>
+	<div class="slide">
+	<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="image/6.jpg"></div>
+		<div class="swiper-slide"><img src="image/7.jpg"></div>
+		<div class="swiper-slide"><img src="image/8.jpg"></div>
+		<div class="swiper-slide"><img src="image/9.jpg"></div>  
+		<div class="swiper-slide"><img src="image/10.jpg"></div>
+		<div class="swiper-slide"><img src="image/11.jpg"></div>	
+		<div class="swiper-slide"><img src="image/12.jpg"></div>
+	</div>
+	<div class="swiper-pagination"></div>
+	</div>
+	</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+	    var swiper = new Swiper('.swiper-container', {
+			effect: 'coverflow',
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			coverflowEffect: {
+			rotate: 20,
+			stretch: 40,
+			depth: 200,
+			modifier: 1,
+			slideShadows: true,
+	      },
+	    loop:true,
+	    autoplay:{
+	  	delay:1000,
+	  	disableOnInteraction: false,
+	      },
+	    });
+	  </script>
+	  <script type="text/javascript">
+	  	function changedata(name) {
+	  		if(name === 'drive'){
+	  		document.getElementsByClassName('h')[0].innerHTML = "drive :: Get in the driver's seat and get paid";
+	  		document.getElementsByClassName('j')[0].innerHTML = "Drive on the platform with the largest network of active riders.";
+	  		document.getElementsByClassName('b')[0].innerHTML = "Sign up to drive";
+	  		document.getElementsByClassName('b')[0].src ="driverreg.php";
+		  	document.getElementsByClassName('imgchange')[0].src = "image/20.jpg";
+	  		}
+	  		if(name === 'ride'){
+	  		document.getElementsByClassName('h')[0].innerHTML = "Ride ::  Request a ride now";
+	  		document.getElementsByClassName('j')[0].innerHTML = "Ride with us and enjoy trip";
+	  		document.getElementsByClassName('b')[0].innerHTML = "Ride Now";
+	  		document.getElementsByClassName('b')[0].href ="ride.php";
+	  		document.getElementsByClassName('imgchange')[0].src = "image/19.jpg";
+			
+	  		}
+	  		if(name === 'eat'){
+	  		document.getElementsByClassName('h')[0].innerHTML = "eat ::  Discover delicious eats with us";
+	  		document.getElementsByClassName('j')[0].innerHTML = "Order delivery from our restaurant you love at any time for you.";
+	  		document.getElementsByClassName('b')[0].innerHTML = "Order Now"; 
+	  		document.getElementsByClassName('b')[0].href ="eat.php"; 
+			document.getElementsByClassName('imgchange')[0].src = "image/6.jpg";
+	  		}
+	  		if(name === 'freight'){
+	  		document.getElementsByClassName('h')[0].innerHTML = "freight ::  A new direction for freight";
+	  		document.getElementsByClassName('j')[0].innerHTML = "Greater transparency for carriers to do business together.";
+	  		document.getElementsByClassName('b')[0].innerHTML = "Order Now";
+	  		document.getElementsByClassName('b')[0].href ="freight.php";
+	  		document.getElementsByClassName('imgchange')[0].src = "image/9.jpg";
+	  		}
+	  		if(name === 'bike'){
+	  		document.getElementsByClassName('h')[0].innerHTML = "bike & scoot ::  Bike or scoot there";
+	  		document.getElementsByClassName('j')[0].innerHTML = "Go farther and have more fun with electric bikes and scooters.";
+	  		document.getElementsByClassName('b')[0].innerHTML = "Get a Ride";
+	  		document.getElementsByClassName('b')[0].href ="bike.php";
+	  		document.getElementsByClassName('imgchange')[0].src = "image/10.jpg";
 
+	  		}
+	  	}
+	</script>
 
-<div class="footer">
-	<div class="linne">
+<!DOCTYPE html>
+<html>
 
-		<div class="inner-footer">
-			<div class="fooer-items">
-				<h1>wedrop</h1>
-				<p>
-					jfdc zx ndbvjs sdgfus dmjhfgs skdgfa zkdctsa sakytd sdjfyte zfsfyd sygfnnfb
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+
+	<title>Responsive Footer</title>
+
+	<!-- <link rel="stylesheet" href="footer.css"> -->
+	
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+</head>
+	<body>
+		<!-- <header>
+			<h1> Responsive Footer </h1>
+			<h2>Have a look</h2>
+			<h2><span>On Below Footer</span></h2>
+		</header>
+
+		The content of your page would go here. -->
+
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+          <!-- <img src="img/logo.png"> -->
+				<h3>We<span>Drop</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#">Blog</a>
+					|
+					<a href="#">About</a>
+					|
+					<a href="#">Contact</a>
 				</p>
+
+				<p class="footer-company-name">© 2019 Eduonix Learning Solutions Pvt. Ltd.</p>
 			</div>
 
-			<div class="fooer-items">
-				<h2 class="hh">Quick Links</h2>
-				<ul class="uull">
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-				</ul>
-			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>309 - Rupa Solitaire,
+						 Bldg. No. A - 1, Sector - 1</span>
+						Mahape, Navi Mumbai - 400710</p>
+				</div>
 
-
-			<div class="fooer-items">
-				<h2 class="hh">Services</h2>
-				<ul class="uull">
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-					<a href=""><li>Home</li></a>
-				</ul>
-			</div> 
-
-
-			<div class="fooer-items">
-				<h2 class="hh">Contect Us</h2>
-				<ul class="uull">
-					<li><i class="fa fa-map-marker" aria-hidden="true"></i>1,sdu skd, bombay</li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i>999999999</li>
-					<li><i class="fa fa-envelope" aria-hidden="true"></i>abc@gmail.com</li>
-				</ul>
-				<div class="social-media">
-					<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 22-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="www.wedrop.com">support@eduonix.com</a></p>
 				</div>
 			</div>
-
-		</div>
-		<div class="footer-bottom">
-			Copyright &copy; Wedrop 2020.All rights reserved.
-		</div>
-	</div>
-
-</body>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					we started as a way to tap a button to get a ride has led to billions of moments of human connection as people around the world go all kinds of places in all kinds of ways with the help of our technology.</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

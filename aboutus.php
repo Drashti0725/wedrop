@@ -1,120 +1,98 @@
+<?php
+	include 'header1.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="aboutus.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="aboutus.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="test">
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="card">
-						<div class="layer"></div>
-						<div class="content1">
-							<p>
-								lorem ipsumwksufe8w sdfygqw esrfuyg dfiuweygf dfweuybwdf wieurfyqwe iwergewjkeygwdf weueg ewu qweg wei weub ew7yge eueyrg vrfs
-							</p>
-							<div class="imagbx">
-								<img src="13.jpg">
-							</div>
-							<div class="detail">
-								<h2>Drive</h2>
-							</div>
-						</div>
+	<div class="service-section">
+		<div class="inner-width">
+			<h1 class="section-title"> 
+				About Us
+			</h1>
+			<div class="border"></div>
+			<div class="service-container">
+				
+
+				<div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-life-ring" aria-hidden="true"></i>
+					</div>
+					<div class="service-title">
+						Earn
+					</div>
+					<div class="service-disc">
+						Whether you’re in the back seat or behind the wheel, your safety is essential.
 					</div>
 				</div>
 
-				<div class="ss">
-					<div class="card">
-						<div class="layer"></div>
-						<div class="content1">
-							<p>
-								lorem ipsumwksufe8w sdfygqw esrfuyg dfiuweygf dfweuybwdf wieurfyqwe iwergewjkeygwdf weueg ewu qweg wei weub ew7yge eueyrg vrfs
-							</p>
-							<div class="imagbx">
-								<img src="13.jpg">
-							</div>
-							<div class="detail">
-								<h2>Drive</h2>
-							</div>
-						</div>
+				<div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-suitcase" aria-hidden="true"></i>
+					</div>
+					<div class="service-title">
+						Ride
+					</div>
+					<div class="service-disc">
+						Whether you’re in the back seat or behind the wheel, your safety is essential. 
 					</div>
 				</div>
 
-				<div class="ss">
-					<div class="card">
-						<div class="layer"></div>
-						<div class="content1">
-							<p>
-								lorem ipsumwksufe8w sdfygqw esrfuyg dfiuweygf dfweuybwdf wieurfyqwe iwergewjkeygwdf weueg ewu qweg wei weub ew7yge eueyrg vrfs
-							</p>
-							<div class="imagbx">
-								<img src="13.jpg">
-							</div>
-							<div class="detail">
-								<h2>Drive</h2>
-							</div>
-						</div>
+				<div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-cutlery" aria-hidden="true"></i>
+					</div>
+					<div class="service-title">
+						Eat
+					</div>
+					<div class="service-disc">
+						Whether you’re in the back seat or behind the wheel, your safety is essential.
 					</div>
 				</div>
 
-				<div class="ss">
-					<div class="card">
-						<div class="layer"></div>
-						<div class="content1">
-							<p>
-								lorem ipsumwksufe8w sdfygqw esrfuyg dfiuweygf dfweuybwdf wieurfyqwe iwergewjkeygwdf weueg ewu qweg wei weub ew7yge eueyrg vrfs
-							</p>
-							<div class="imagbx">
-								<img src="13.jpg">
-							</div>
-							<div class="detail">
-								<h2>Drive</h2>
-							</div>
-						</div>
+				<div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-truck" aria-hidden="true"></i>
+					</div>
+					<div class="service-title">
+						freight
+					</div>
+					<div class="service-disc">
+						Whether you’re in the back seat or behind the wheel, your safety is essential.
 					</div>
 				</div>
 
-				<div class="ss">
-					<div class="card">
-						<div class="layer"></div>
-						<div class="content1">
-							<p>
-								lorem ipsumwksufe8w sdfygqw esrfuyg dfiuweygf dfweuybwdf wieurfyqwe iwergewjkeygwdf weueg ewu qweg wei weub ew7yge eueyrg vrfs
-							</p>
-							<div class="imagbx">
-								<img src="13.jpg">
-							</div>
-							<div class="detail">
-								<h2>Drive</h2>
-							</div>
-						</div>
+				<div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-motorcycle" aria-hidden="true"></i>
+					</div>
+					<div class="service-title">
+						Bike & scoot
+					</div>
+					<div class="service-disc">
+						Whether you’re in the back seat or behind the wheel, your safety is essential.
 					</div>
 				</div>
 
+				<div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+					</div>
+					<div class="service-title">
+						Safty
+					</div>
+					<div class="service-disc">
+						Whether you’re in the back seat or behind the wheel, your safety is essential.
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script>
-		var swiper = new Swiper('.sc', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 0,
-        modifier: 1,
-        slideShadows: true,
-      },
-      loop:true,
-    });
-	</script>
 </body>
 </html>

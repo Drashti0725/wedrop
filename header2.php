@@ -7,6 +7,7 @@
 </head>
 <body>
 	<ul class="aa">
+		
 		<li class="bb">
 			<a href="driverreg.php">
 				<div class="icon">
@@ -15,8 +16,6 @@
 				<div class="name" data-text="Drive">Drive</div>
 			</a>
 		</li>
-
-
 
 		<li class="bb">
 			<a href="#">
@@ -34,7 +33,7 @@
 				</div>
 				<div class="name" data-text="Eat">Eat</div>
 			</a>
-		</li>
+		</li> 
 
 		<li class="bb">
 			<a href="#">
@@ -44,6 +43,7 @@
 				<div class="name" data-text="Freight">Freight</div>
 			</a>
 		</li>
+
 		<li class="bb">
 			<a href="#">
 				<div class="icon">
@@ -53,5 +53,6 @@
 			</a>
 		</li>
 	</ul>
+	
 </body>
 </html>
