@@ -38,7 +38,7 @@
 					|
 					<a href="#">About</a>
 					|
-					<a href="#">Contact</a>
+					<a href="#">Contact us</a>
 				</p>
 
 				<p class="footer-company-name">© 2019 Eduonix Learning Solutions Pvt. Ltd.</p>
